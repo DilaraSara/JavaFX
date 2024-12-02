@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="235.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/20.0.1" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.javafx.PrimaryController">
+   <children>
+         <Label layoutX="14.0" layoutY="61.0" prefHeight="30.0" prefWidth="125.0" text="Kullanıcı Adı :">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+         <Button layoutX="195.0" layoutY="144.0" onAction="#handleLoginButtonAction" 
+                 prefHeight="30.0" prefWidth="82.0" text="Giriş" />
+         <Label fx:id="hataLabel" textFill="RED" />
+         <PasswordField fx:id="sifreField" layoutX="146.0" layoutY="91.0" prefHeight="30.0" prefWidth="179.0" />
+         <Label layoutX="14.0" layoutY="93.0" prefHeight="26.0" prefWidth="119.0" text="Şifre               :">
+         <font>
+            <Font name="American Typewriter" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kullaniciAdiField" layoutX="146.0" layoutY="60.0" prefHeight="21.0" prefWidth="179.0" />
+   </children>
+</AnchorPane>
